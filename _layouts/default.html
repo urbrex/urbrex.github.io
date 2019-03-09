@@ -7,25 +7,13 @@
 		</head>
 		<body>
 			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
+				{% include header.html %}
 			</nav>
 			<div class="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	    			<li><p>Contact</p></li>
-          			<li>
-          				<a class="u-email" href="mailto:ivytorr@gmail.com">ivytorr@gmail.com</a></li>
-          			<li><a href="https://github.com/urbrex">github/urbrex</a></li>
-				</ul>
-			</footer>
+			{% include footer.html %}
 		</body>
 	</html>
