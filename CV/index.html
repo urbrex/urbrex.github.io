@@ -2,6 +2,9 @@
 layout: default
 title: Ivan Holub
 ---
+<p>Tu sa nachádza môj životopis, je dostupný k prípadnému stiahnutiu tu:
+	<a href="{{ site.url }}/downloads/CV.pdf" download>IvanHolubCV.pdf</a>
+</p>
 <div class="block">
 	<div class="left">
 		<p>Personal Information</p>
@@ -12,59 +15,51 @@ title: Ivan Holub
 		<p>Phone:   secret</p>
 		<p>Mail:    ivytorr@gmail.com</p>
 	</div>
-	<div class="left">
-		<p>ASAS</p>
+</div>
+<div class="block alone">
+	<div class="block ">
+		<div class="left alone"><p>Work experience</p></div>
+		{% for work_experience in site.work_experiences %}
+			<div class="left">
+				<p> {{ work_experience.from }} - {{ work_experience.to }} </p>
+			</div>
+			<div class="left">
+  			<h2>{{ work_experience.possition }}</h2>
+  			<p>{{ work_experience.employer }}</p>
+  			<p>{{ work_experience.content | markdownify }}</p>
+  			</div>
+		{% endfor %}
+	</div>
+</div>
+<div class="block alone">
+	<div class="block ">
+		<div class="left alone"><p>Education</p></div>
+		<div class="left">01.09.2012 - 31.8.2016</div>
+		<div class="left">
+			<p>Grammar school of Martin Hatalla, Trstena Slovakia</p>
+			<p>Class with focus on Mathematics Physics and IT</p>
+		</div>
+	</div>
+	<div class="block ">
+		<div class="left">01.09.2016 - Present</div>
+		<div class="left">
+			<p>Faculty of informatics and information technology of STU, Bratislava (Slovakia)</p>
+			<p>Math, IT, Software enginering </p>
+		</div>
 	</div>
 </div>
 <div class="block">
-	<div class="block">
-		<div class="left">
-	
-		</div>
-		<div class="left">
-	
-		</div>
+	<div class="left alone">
+		<p>Personal skills</p>
 	</div>
-	<div class="block">
+	<div class="alone">
 		<div class="left">
-	
+			<p>Languages</p>
 		</div>
 		<div class="left">
-	
-		</div>
-	</div>
-	<div class="block">
-		<div class="left">
-	
-		</div>
-		<div class="left">
-	
-		</div>
-	</div>
-	<div class="block">
-		<div class="left">
-	
-		</div>
-		<div class="left">
-	
-		</div>
-	</div>
-</div>
-<div>
-	<div>
-		<div class="left">
-	
-		</div>
-		<div class="left">
-	
-		</div>
-	</div>
-	<div>
-		<div class="left">
-	
-		</div>
-		<div class="left">
-	
+			<p>Slovak-mother language</p>
+			<p>English-B2</p>
+			<p>Spanih-basics</p>
 		</div>
 	</div>
 </div>

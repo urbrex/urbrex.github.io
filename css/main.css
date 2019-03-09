@@ -2,13 +2,21 @@
     float: left;
     margin-left: 30px;
     margin-right: : 30px;
-    width: 30%
+    width: 45%;
+    display:inline-block ;
 }
-
+.alone {
+    width: 100%;
+}
 body {
     background-image: url("../img/wood-pattern-texture-235994.jpg");
     margin: 60px auto;
-    width: 70%;
+    width: 85%;
+}
+.body {
+    background:rgba(255,255,255,0.6);
+    padding: 15px;
+    border-radius: 20px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -16,9 +24,32 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
-nav ul li,footer ul li {
+nav ul {
+    float: right;
+}
+.uvod p a{
+    text-decoration: underline;
+}
+.meno{
+    position: relative;
+    top:10px;
+    left:15px;
     display: inline;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    font-size: 1.4em;
+}
+nav ul li, footer ul li{
+    display: inline;
+    width: auto;
     margin-right: 20px;
+}
+
+.header, .footer {
+    background:rgba(205,205,205,0.6);
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 a {
     text-decoration: none;
@@ -39,12 +70,6 @@ p {
 .block {
     display: block;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-    display: block;
-    float: bottom;
-}
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -53,4 +78,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+.container{
+    display:inline-block;
+    width: 100%
 }
