@@ -5,6 +5,11 @@
     width: 45%;
     display:inline-block ;
 }
+.width_max{
+    display: inline-block;
+    font-size: 1.8em;
+    width: 100%;
+}
 .books{
     font-size: 1.3em;
 }
