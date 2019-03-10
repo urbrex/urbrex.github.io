@@ -5,6 +5,9 @@
     width: 45%;
     display:inline-block ;
 }
+.books{
+    font-size: 1.3em;
+}
 .alone {
     width: 100%;
 }
@@ -92,7 +95,9 @@ ul.posts {
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
+ul.books li {
+    list-style: none;
+}
 ul.posts li {
     list-style: none;
 }
