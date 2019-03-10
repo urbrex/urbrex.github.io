@@ -24,11 +24,28 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+.nav{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.nav li{
+    display: inline;
+    width: auto;
+    margin-right: 20px;
+    text-decoration: underline;
+}
 nav ul {
     float: right;
 }
 .uvod p a{
     text-decoration: underline;
+}
+.left ul li{
+    font-size: 1.3em;
+    font-family:'Sans-Serif';
 }
 .meno{
     position: relative;
