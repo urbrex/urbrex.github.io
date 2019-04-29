@@ -1,0 +1,62 @@
+---
+layout: default
+title: Tretie zadanie
+---
+<h2>Opis typu dokumentu + opis účelu navrhnutých elementov: </h2>
+<p>Táto časť zadania bola riešená vytvorením DTD</p>
+<p>Návrh prezentácie počítal s tým, že používateľ bude pri prezentácii chcieť poznámky a preto boli aj tieto zaradené do xml prezentácie. V prezentácii sa dá zapísať 6 základných typov slidov</p>
+<p>Podrobnejšie informácie o účele jednotlivých elementov a konkrétnom rozložení sa nachádza v komentároch v dtd súbore</p>
+
+<h2>Vytvorenie ukážkovej XML prezentácie </h2>
+<p>Pre vytvorenie ukážkovej prezentácie bola použitá prezentácia vytvorená ako progress report zadania z predmetu princípy informačnej bezpečnosti. Táto prezentácia bola upravená tak, aby obsahovala vsetky typy slidov. do prezentacie boli nasledne pridane obrazky a pozadia. </p>
+
+<h2>Parametre transformácii</h2>
+<p>V transormáciách boli použité nasledovné parametre:</p>
+<ul>
+	<li>
+		ShowNotes
+	</li>
+	<p>Sluzi na nastavenie ci maju byt po transormacii pouzite poznamky na vyber je display:none skry poznamky alebo display:block zobraz poznamky</p>
+	<li>
+		Prez
+	</li>
+	<p>Sluzi na nastavenie velkosi pomeru stran prezentacie  na vyber je r169 co je rozlisenie 16:9 alebo r43 co je rozlisenie 4:3 rozlisenia su hd</p>
+	<li>
+		BorderStyle
+	</li>
+	<p>Sluzi na nastavenie aky styl ma mat ramik okolo prezentacie. Na vyber su moznosti ponukane v css ako napriklad solid alebo dashed</p>
+	<li>
+		TextfontFamily
+	</li>
+	<p>Nastavuje font na moznost poskytovanu v css pr9kladom su fonty tahoma | impact | fantasy</p>
+	<li>
+		Textfontsize
+	</li>
+	<p>Umoznuje nastavit velkost textu v px,em,rem alebo %</p>
+	<li>
+		Textfontcolor
+	</li>
+	<p>Umoznuje nastavit farbu textu mapriklad vo formate rgb(), rgba(), alebo napisanim hodnoty farby napr. black</p>
+	<li>
+		TitlefontFamily
+	</li>
+	<p>Nastavuje font na moznost poskytovanu v css prikladom su fonty tahoma | impact | fantasy</p>
+	<li>
+		Titlefontsize
+	</li>
+	<p>Umoznuje nastavit velkost textu v px,em,rem alebo %</p>
+	<li>
+		Titlefontcolor
+	</li>
+	<p>Umoznuje nastavit farbu textu mapriklad vo formate rgb(), rgba(), alebo napisanim hodnoty farby napr. black</p>
+</ul>
+
+<h2>Navigacia medzi slidami</h2>
+<p>Každý slide prezentácie obsahuje navigáciu v podobe tlacidiel s názvami predchádzajúci a nasledujúci, príslušný slide. Prvý slide prezentácie neobsahuje odkaz na predchádzajpci slide a je zobrazené iba tlačidlo nasledujúci. Posledný slide prezentácie neobsahuje odkaz na nasledujúci slide. Dostupnosť nasledujúceho a predchádzajúceho slidu sa zisťuje či je element prezentácie prvý prípadne posledný v poradí.</p>
+
+<h2>XSLT pre konverziu prezentácie z XML -> XHTML+CSS: </h2>
+<p>Zostrojený XML strom prezentácie je následne transformovaný do XHTML dokumentu pomocou súboru xhtml presentation.bat Pri transformácii XML stromu prezentácie do XHTML sú použité XSL transformácie a na ich vykonanie je potrebné spustiť vyšie spomenutý bat súbor. Pred spustením súboru je však najsôr potrebné zmeniť cestu ku saxoní knižnici v tomto súbore ak sa nachádza inde ako na ceste C:/DocBook/saxon/saxon9.jar -o xhtml.xhtml. Jednotlivé slidy prezentacie sa generuju do osobitnych xhtml suborov. Tieto xhtml súyborysú následne upracené pomocou css súboru. alebo inline štýlov pre veci ktoré je možné meniť parametrami transformácií. 
+</p>
+
+<h2>Vytvorenie XSLT pre konverziu prezentácie XML -> PDF</h2>
+<p> Tieto transformácie neboli napísané</p>
